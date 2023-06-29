@@ -1,51 +1,36 @@
-# Volvo Cars (Global Online Digital)
+# Car Galery
 
-## Front-end coding test (React)
+O projeto Car Gallery é um desafio técnico baseado no teste fornecido pelo Volvo Cars, disponível em https://github.com/volvo-cars/god-frontend-code-test/tree/master. O objetivo principal desse projeto é criar uma galeria de carros que consome dados de uma API.
 
-Our team's designer has come up with a new design to show our latest and greatest recharge cars on the website.
+Desenvolvido com as tecnologias Next.js e React.ts, o Car Gallery é uma aplicação moderna e poderosa para exibir uma lista de carros em formato de cartões (cards). Através da integração com uma API, o projeto busca obter informações relevantes sobre cada carro, como o modelo, o tipo do carro, e a URL da imagem.
 
-Here is how the design look like for desktop and mobile (files are stored under `docs` folder)
+A aplicação oferece uma experiência interativa e responsiva, adaptando-se tanto a dispositivos móveis quanto a telas maiores. Utilizando a biblioteca React.ts, o Car Gallery é capaz de gerenciar estados, implementar componentes reutilizáveis e oferecer uma experiência de usuário fluida e intuitiva.
 
-### Desktop
+Ao consumir a lista de carros da API, o projeto Car Gallery exibe os carros em forma de cartões, permitindo ao usuário navegar entre eles. Além disso, a aplicação oferece recursos como filtros para selecionar carros com base em critérios específicos e botões de navegação para percorrer a lista de carros.
 
-![ProductListDesktop](./docs/ProductList-Desktop.png)
+O Car Gallery é um desafio técnico interessante que permite aprimorar minha habilidade em Next.js, React.ts e integração com APIs. É uma oportunidade de aplicar conceitos avançados de desenvolvimento front-end e demonstrar domínio nas tecnologias mencionadas.
+## Stack utilizada
 
-### Mobile
+**Front-end:** React, TypeScript, NextJs
 
-![ProductListDesktop](./docs/ProductList-Mobile.png)
 
-The data required to render the design is under `public/api/cars.json` folder. You need to fetch the data and render it in the browser. The data looks like this:
+## Rodando localmente
 
-```json
-[
-  {
-    "id": "xc90-recharge",
-    "modelName": "XC90 Recharge",
-    "bodyType": "suv",
-    "modelType": "plug-in hybrid",
-    "imageUrl": "/images/xc90_recharge.jpg"
-  }
-]
+Clone o projeto
+
+```bash
+  git clone https://github.com/BaldezPatrick/car-gallery.git
 ```
 
-The product owner is telling you that you can generate the links to the learn and shop pages of each car by concatating the `id` of the car to the learn (`/learn/`) and shop (`/shop/`) urls.
+Entre no diretório do projeto e instale as dependências
 
-Two extra SVG icons are also provided by our designer which are stored under `docs` folder.
+```bash
+  npm install
+```
 
-## Requirements
+Inicie o servidor
 
-- The project is bootstraped using [Next.js](https://nextjs.org/).
-- Browser support is modern ever-green browsers.
-- Implement this design using React and Typescript.
-- Accessibility is important.
-- Code Structure and reusablity is important.
-
-## Bonus Points:
-
-- If you use our design system component library, [VCC-UI](https://vcc-ui.vercel.app/)
-- If you add a filter bar on the top to filter cars by `bodyType`
-
-## Submission
-
-Clone this repository to get started. Due to a number of reasons, not least privacy, you will be asked to zip your solution and mail it in, instead of submitting a pull-request. In order to maintain an unbiased reviewing process, please ensure to keep your name or other Personal Identifiable Information (PII) from the code.
+```bash
+  npm run dev
+```
 
