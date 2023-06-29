@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+  
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.price {
+    margin-bottom: 10px;
+}
+  
+.price span {
+    font-weight: bold;
+}
+  
+.price strong {
+    margin-left: 10px;
+}
+  
+.info {
+    margin-bottom: 10px;
+}
+  
+.info span {
+    font-weight: bold;
+}
+  
+.info p {
+    margin-left: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1c6bba;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    width: 30%;
+    cursor: pointer;
+}
+  
+.button:hover {
+    background-color: #155c99;
+}
+  
+.button:active {
+    background-color: #0e436f;
+}
+
+.cancelButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+  
+.cancelButton:hover {
+    background-color: #c0392b;
+}
+  
+.cancelButton:active {
+    background-color: #a5281b;
+}
+  

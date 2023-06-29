@@ -1,4 +1,11 @@
+
 body {
-  background: steelblue;
-  color: white;
+  background: white;
+  color: black;
+  font-family: 'Monospace';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

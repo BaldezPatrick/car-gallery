@@ -1,0 +1,101 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+.cardContainer h3 {
+    color: #9a9595;
+}
+
+.cardParagh {
+    display: flex;
+    gap: 5px;
+}
+
+.cardParagh p:first-child {
+    font-weight: bold;
+}
+
+.cardParagh p:nth-child(2) {
+    color: #9a9595; 
+}
+
+.carCard {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carCard > div {
+    margin: 20px;
+}
+
+.carCard img {
+    max-width: 300px;
+}
+
+.linkPages {
+    align-items: center;
+    cursor: pointer;
+    color: rgb(23, 23, 230);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 12px;
+}
+
+.linkPages button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: rgb(23, 23, 230);
+    font-size: 1rem;
+    font-family: 'Monospace';
+}
+
+.linkPages div {
+    width: 12px;
+}
+
+.listMoveBtn {
+    width: 80%;
+    color: blue;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.listMoveBtnItem {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+}
+
+.svg{
+    transform: rotate(180deg);
+}
+
+.mobileDotsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.mobileDot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+  
+.mobileDot.activeDot {
+    background-color: #1c6bba;
+}
+  
