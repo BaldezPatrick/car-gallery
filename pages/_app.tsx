@@ -1,13 +1,14 @@
-import { HelloWorld } from "../src/components/HelloWorld";
+import type { AppProps } from "next/app";
 import "../public/css/styles.css";
-import React from "react";
-
-function HomePage() {
+import Router from "../src/components/router";
+import { CarProvider } from "../context/CarContext";
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <React.StrictMode>
-      <HelloWorld />
-    </React.StrictMode>
+    <>
+      <CarProvider>
+        <Router />
+        <Component {...pageProps} />
+      </CarProvider>
+    </>
   );
 }
-
-export default HomePage;
